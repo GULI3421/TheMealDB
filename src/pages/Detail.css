@@ -1,0 +1,125 @@
+.detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-color: #1e1b18;
+}
+
+.meal-main-title {
+  text-align: center;
+  color: #c85a17;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.meal-content-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.meal-left-column {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.meal-main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  border: 1px solid #2a2522;
+}
+
+.meal-info-row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #161412;
+  padding: 12px;
+  border: 1px solid #2a2522;
+  font-size: 15px;
+}
+
+.meal-tags {
+  background-color: #161412;
+  padding: 12px;
+  border: 1px solid #2a2522;
+  font-size: 15px;
+  text-align: center;
+  color: #c85a17;
+}
+
+.meal-right-column {
+  flex: 2;
+  min-width: 320px;
+}
+
+.meal-right-column h2,
+.meal-instructions-section h2 {
+  color: #c85a17;
+  border-bottom: 2px solid #c85a17;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.ingredient-card {
+  background-color: #161412;
+  border: 1px solid #2a2522;
+  border-radius: 0;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.ingredient-card:hover {
+  border-color: #c85a17;
+  transform: translateY(-3px);
+}
+
+.ingredient-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.ingredient-text {
+  font-size: 14px;
+  color: #c85a17;
+  font-weight: 600;
+}
+
+.meal-instructions-section {
+  margin-top: 40px;
+  background-color: #161412;
+  padding: 20px;
+  border: 1px solid #2a2522;
+}
+
+.meal-instructions-section p {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #dddddd;
+  white-space: pre-line;
+}
+
+.error-message {
+  text-align: center;
+  color: #c85a17;
+  font-size: 20px;
+  margin-top: 50px;
+}

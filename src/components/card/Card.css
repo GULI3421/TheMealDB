@@ -1,0 +1,59 @@
+/* Основной контейнер карточки */
+.meal-card {
+  width: 250px;
+  background-color: #1e1b18; /* Темный фон под стать сайту */
+  border: 1px solid #2a2522;
+  border-radius: 0; /* Острые углы */
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* Эффект ховера (как на оригинальном TheMealDB) */
+.meal-card:hover {
+  transform: translateY(-4px); /* Легкое поднятие вверх */
+  border-color: #c85a17;     /* Оранжевая рамка при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Контейнер картинки */
+.meal-image-container {
+  width: 100%;
+  height: 250px; /* Квадратное изображение */
+  overflow: hidden;
+}
+
+.meal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0; /* Острые углы картинки */
+  transition: transform 0.3s ease;
+}
+
+/* Плавное увеличение картинки при наведении на всю карточку */
+.meal-card:hover .meal-image {
+  transform: scale(1.03);
+}
+
+/* Блок с текстом под картинкой */
+.meal-title-container {
+  padding: 14px 10px;
+  background-color: #161412; /* Чуть темнее фон для заголовка */
+  text-align: center;
+}
+
+/* Текст заголовка */
+.meal-title {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #c85a17; /* Фирменный оранжевый цвет названия блюда */
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+/* Изменение оттенка текста при ховере */
+.meal-card:hover .meal-title {
+  color: #e06820; 
+}
